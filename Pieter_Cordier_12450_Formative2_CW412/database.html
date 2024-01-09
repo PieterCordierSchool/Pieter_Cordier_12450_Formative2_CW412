@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+  <title>IndexedDb</title>
+    <link rel="stylesheet" href="database.css">
+
+</head>
+ 
+<body>
+    
+ 
+<script src="gaming.js"></script>
+
+ 
+<section>
+    <form id="database-form">
+  <input
+    type="text"
+    name=""
+    id="gameName"
+    placeholder="What is your games name?"
+  /><br />
+  <input
+    type="text"
+    name=""
+    id="gameType"
+    placeholder="What type of game is it?"
+  /><br />
+  <input
+    type= "text"
+
+    id="gameRating"
+    placeholder="What is your rating 1-5?"
+  /><br />
+</form>
+
+<div class="database-button">
+  <button class="landing-btn" onclick="addGame()">Add Game</button>
+  <button class="landing-btn" onclick="deleteGame()">Delete Game</button>
+  <button class="landing-btn" onclick="showGames()">Show Games</button>
+  <button class="landing-btn" onclick="clearDatabase()">Clear Games</button>
+  <!-- <button class="landing-btn" onclick="deleteDB()">Delete Database</button> -->
+</div>
+
+<!-- Show the database in a list -->
+
+<h2 class="database-h2">Database output</h2>
+
+<div class="database-list">
+  <li id="gamesList"></li>
+</div>
+</section> 
+
+</body>
+</html>
